@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E31AA0B0203B497000DF8F29 /* DSWeatherViewModalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E31AA0AF203B497000DF8F29 /* DSWeatherViewModalTests.m */; };
+		E329E56B2035116100EFBA2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E329E5682035116100EFBA2A /* AppDelegate.m */; };
+		E329E56C2035116100EFBA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E329E56A2035116100EFBA2A /* Assets.xcassets */; };
+		E36FD3BA203C0C8A00E6FD11 /* DSWeatherLocationsViewModal.m in Sources */ = {isa = PBXBuildFile; fileRef = E36FD3B8203C0C8A00E6FD11 /* DSWeatherLocationsViewModal.m */; };
+		E36FD3C1203C0CA600E6FD11 /* DSHumidity.m in Sources */ = {isa = PBXBuildFile; fileRef = E36FD3BB203C0CA600E6FD11 /* DSHumidity.m */; };
+		E36FD3C2203C0CA600E6FD11 /* DSWeatherForeCastDay.m in Sources */ = {isa = PBXBuildFile; fileRef = E36FD3BD203C0CA600E6FD11 /* DSWeatherForeCastDay.m */; };
+		E36FD3C3203C0CA600E6FD11 /* DSWeatherForecastForTenDays.m in Sources */ = {isa = PBXBuildFile; fileRef = E36FD3C0203C0CA600E6FD11 /* DSWeatherForecastForTenDays.m */; };
+		E36FD3C7203C0CC800E6FD11 /* DSWeatherReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36FD3C4203C0CC800E6FD11 /* DSWeatherReportViewController.xib */; };
+		E36FD3C8203C0CC800E6FD11 /* DSWeatherReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E36FD3C6203C0CC800E6FD11 /* DSWeatherReportViewController.m */; };
+		E36FD3D1203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E36FD3CE203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.m */; };
+		E36FD3D2203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36FD3CF203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.xib */; };
+		E36FD3D7203C0D2F00E6FD11 /* DSWeatherReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36FD3D4203C0D2E00E6FD11 /* DSWeatherReportTableViewCell.xib */; };
+		E36FD3D8203C0D2F00E6FD11 /* DSWeatherReportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E36FD3D6203C0D2E00E6FD11 /* DSWeatherReportTableViewCell.m */; };
+		E37B38C120340B1700805709 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E37B38C020340B1700805709 /* main.m */; };
+		E37B38D620340B1800805709 /* DSWeatherAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E37B38D520340B1800805709 /* DSWeatherAppUITests.m */; };
+		E3A652D02038ADEA007568F3 /* DSWeatherNetworkClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A652CF2038ADEA007568F3 /* DSWeatherNetworkClientTests.m */; };
+		E3A652E32038F1EB007568F3 /* DSWeatherLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A652E12038F1EA007568F3 /* DSWeatherLocation.m */; };
+		E3A652E72038F1FE007568F3 /* DSWeatherViewModal.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A652E52038F1FE007568F3 /* DSWeatherViewModal.m */; };
+		E3A652EB2038F21A007568F3 /* DSWeatherNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A652EA2038F21A007568F3 /* DSWeatherNetworkClient.m */; };
+		E3A6530E203A519A007568F3 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65305203A519A007568F3 /* AFURLResponseSerialization.m */; };
+		E3A6530F203A519B007568F3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65306203A519A007568F3 /* AFHTTPSessionManager.m */; };
+		E3A65310203A519B007568F3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65308203A519A007568F3 /* AFURLSessionManager.m */; };
+		E3A65311203A519B007568F3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65309203A519A007568F3 /* AFURLRequestSerialization.m */; };
+		E3A65312203A519B007568F3 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A6530B203A519A007568F3 /* AFNetworkReachabilityManager.m */; };
+		E3A65313203A519B007568F3 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A6530C203A519A007568F3 /* AFSecurityPolicy.m */; };
+		E3A65329203A537E007568F3 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65315203A537D007568F3 /* UIProgressView+AFNetworking.m */; };
+		E3A6532A203A537E007568F3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65317203A537D007568F3 /* UIRefreshControl+AFNetworking.m */; };
+		E3A6532B203A537E007568F3 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A6531A203A537D007568F3 /* AFNetworkActivityIndicatorManager.m */; };
+		E3A6532C203A537E007568F3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65320203A537D007568F3 /* UIImageView+AFNetworking.m */; };
+		E3A6532D203A537E007568F3 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65323203A537D007568F3 /* UIButton+AFNetworking.m */; };
+		E3A6532E203A537E007568F3 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65324203A537D007568F3 /* UIActivityIndicatorView+AFNetworking.m */; };
+		E3A6532F203A537E007568F3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65325203A537D007568F3 /* UIWebView+AFNetworking.m */; };
+		E3A65330203A537E007568F3 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65326203A537D007568F3 /* AFAutoPurgingImageCache.m */; };
+		E3A65331203A537E007568F3 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A65328203A537D007568F3 /* AFImageDownloader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E37B38C720340B1800805709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37B38A620340B1700805709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E37B38AD20340B1700805709;
+			remoteInfo = DSWeatherApp;
+		};
+		E37B38D220340B1800805709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37B38A620340B1700805709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E37B38AD20340B1700805709;
+			remoteInfo = DSWeatherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E31AA0AF203B497000DF8F29 /* DSWeatherViewModalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSWeatherViewModalTests.m; sourceTree = "<group>"; };
+		E329E5682035116100EFBA2A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MainAppContents/AppDelegate.m; sourceTree = "<group>"; };
+		E329E5692035116100EFBA2A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MainAppContents/AppDelegate.h; sourceTree = "<group>"; };
+		E329E56A2035116100EFBA2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MainAppContents/Assets.xcassets; sourceTree = "<group>"; };
+		E36FD3B8203C0C8A00E6FD11 /* DSWeatherLocationsViewModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSWeatherLocationsViewModal.m; path = WeatherApp/ViewModal/DSWeatherLocationsViewModal.m; sourceTree = "<group>"; };
+		E36FD3B9203C0C8A00E6FD11 /* DSWeatherLocationsViewModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSWeatherLocationsViewModal.h; path = WeatherApp/ViewModal/DSWeatherLocationsViewModal.h; sourceTree = "<group>"; };
+		E36FD3BB203C0CA600E6FD11 /* DSHumidity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSHumidity.m; path = WeatherApp/Modal/DSHumidity.m; sourceTree = "<group>"; };
+		E36FD3BC203C0CA600E6FD11 /* DSHumidity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSHumidity.h; path = WeatherApp/Modal/DSHumidity.h; sourceTree = "<group>"; };
+		E36FD3BD203C0CA600E6FD11 /* DSWeatherForeCastDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSWeatherForeCastDay.m; path = WeatherApp/Modal/DSWeatherForeCastDay.m; sourceTree = "<group>"; };
+		E36FD3BE203C0CA600E6FD11 /* DSWeatherForeCastDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSWeatherForeCastDay.h; path = WeatherApp/Modal/DSWeatherForeCastDay.h; sourceTree = "<group>"; };
+		E36FD3BF203C0CA600E6FD11 /* DSWeatherForecastForTenDays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSWeatherForecastForTenDays.h; path = WeatherApp/Modal/DSWeatherForecastForTenDays.h; sourceTree = "<group>"; };
+		E36FD3C0203C0CA600E6FD11 /* DSWeatherForecastForTenDays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSWeatherForecastForTenDays.m; path = WeatherApp/Modal/DSWeatherForecastForTenDays.m; sourceTree = "<group>"; };
+		E36FD3C4203C0CC800E6FD11 /* DSWeatherReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DSWeatherReportViewController.xib; path = WeatherApp/View/DSWeatherReportViewController.xib; sourceTree = "<group>"; };
+		E36FD3C5203C0CC800E6FD11 /* DSWeatherReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSWeatherReportViewController.h; path = WeatherApp/View/DSWeatherReportViewController.h; sourceTree = "<group>"; };
+		E36FD3C6203C0CC800E6FD11 /* DSWeatherReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSWeatherReportViewController.m; path = WeatherApp/View/DSWeatherReportViewController.m; sourceTree = "<group>"; };
+		E36FD3CE203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSWeatherReportHeaderTableViewCell.m; path = WeatherApp/View/DSWeatherReportHeaderTableViewCell.m; sourceTree = "<group>"; };
+		E36FD3CF203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DSWeatherReportHeaderTableViewCell.xib; path = WeatherApp/View/DSWeatherReportHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		E36FD3D0203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSWeatherReportHeaderTableViewCell.h; path = WeatherApp/View/DSWeatherReportHeaderTableViewCell.h; sourceTree = "<group>"; };
+		E36FD3D4203C0D2E00E6FD11 /* DSWeatherReportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DSWeatherReportTableViewCell.xib; path = WeatherApp/View/DSWeatherReportTableViewCell.xib; sourceTree = "<group>"; };
+		E36FD3D5203C0D2E00E6FD11 /* DSWeatherReportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSWeatherReportTableViewCell.h; path = WeatherApp/View/DSWeatherReportTableViewCell.h; sourceTree = "<group>"; };
+		E36FD3D6203C0D2E00E6FD11 /* DSWeatherReportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSWeatherReportTableViewCell.m; path = WeatherApp/View/DSWeatherReportTableViewCell.m; sourceTree = "<group>"; };
+		E37B38AE20340B1700805709 /* DSWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37B38BF20340B1700805709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37B38C020340B1700805709 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E37B38C620340B1800805709 /* DSWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37B38CC20340B1800805709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37B38D120340B1800805709 /* DSWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37B38D520340B1800805709 /* DSWeatherAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSWeatherAppUITests.m; sourceTree = "<group>"; };
+		E37B38D720340B1800805709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A652CF2038ADEA007568F3 /* DSWeatherNetworkClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSWeatherNetworkClientTests.m; sourceTree = "<group>"; };
+		E3A652E12038F1EA007568F3 /* DSWeatherLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSWeatherLocation.m; path = WeatherApp/Modal/DSWeatherLocation.m; sourceTree = "<group>"; };
+		E3A652E22038F1EA007568F3 /* DSWeatherLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSWeatherLocation.h; path = WeatherApp/Modal/DSWeatherLocation.h; sourceTree = "<group>"; };
+		E3A652E52038F1FE007568F3 /* DSWeatherViewModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSWeatherViewModal.m; path = WeatherApp/ViewModal/DSWeatherViewModal.m; sourceTree = "<group>"; };
+		E3A652E62038F1FE007568F3 /* DSWeatherViewModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSWeatherViewModal.h; path = WeatherApp/ViewModal/DSWeatherViewModal.h; sourceTree = "<group>"; };
+		E3A652E92038F21A007568F3 /* DSWeatherNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSWeatherNetworkClient.h; path = WeatherApp/NetworkCLient/DSWeatherNetworkClient.h; sourceTree = "<group>"; };
+		E3A652EA2038F21A007568F3 /* DSWeatherNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSWeatherNetworkClient.m; path = WeatherApp/NetworkCLient/DSWeatherNetworkClient.m; sourceTree = "<group>"; };
+		E3A65301203A519A007568F3 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		E3A65302203A519A007568F3 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		E3A65303203A519A007568F3 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		E3A65304203A519A007568F3 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		E3A65305203A519A007568F3 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		E3A65306203A519A007568F3 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		E3A65307203A519A007568F3 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		E3A65308203A519A007568F3 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		E3A65309203A519A007568F3 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		E3A6530A203A519A007568F3 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		E3A6530B203A519A007568F3 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		E3A6530C203A519A007568F3 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		E3A6530D203A519A007568F3 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		E3A65315203A537D007568F3 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		E3A65316203A537D007568F3 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		E3A65317203A537D007568F3 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		E3A65318203A537D007568F3 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		E3A65319203A537D007568F3 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		E3A6531A203A537D007568F3 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		E3A6531B203A537D007568F3 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		E3A6531C203A537D007568F3 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		E3A6531D203A537D007568F3 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		E3A6531E203A537D007568F3 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		E3A6531F203A537D007568F3 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		E3A65320203A537D007568F3 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		E3A65321203A537D007568F3 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		E3A65322203A537D007568F3 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		E3A65323203A537D007568F3 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		E3A65324203A537D007568F3 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		E3A65325203A537D007568F3 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		E3A65326203A537D007568F3 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		E3A65327203A537D007568F3 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		E3A65328203A537D007568F3 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E37B38AB20340B1700805709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37B38C320340B1800805709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37B38CE20340B1800805709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E31AA0B9203C072300DF8F29 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				E36FD3D0203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.h */,
+				E36FD3CE203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.m */,
+				E36FD3CF203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.xib */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		E329E5672035114A00EFBA2A /* MainAppContents */ = {
+			isa = PBXGroup;
+			children = (
+				E329E5692035116100EFBA2A /* AppDelegate.h */,
+				E329E5682035116100EFBA2A /* AppDelegate.m */,
+				E329E56A2035116100EFBA2A /* Assets.xcassets */,
+			);
+			name = MainAppContents;
+			sourceTree = "<group>";
+		};
+		E36FD3D3203C0D0900E6FD11 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E36FD3D5203C0D2E00E6FD11 /* DSWeatherReportTableViewCell.h */,
+				E36FD3D6203C0D2E00E6FD11 /* DSWeatherReportTableViewCell.m */,
+				E36FD3D4203C0D2E00E6FD11 /* DSWeatherReportTableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		E37B38A520340B1700805709 = {
+			isa = PBXGroup;
+			children = (
+				E37B38B020340B1700805709 /* DSWeatherApp */,
+				E37B38C920340B1800805709 /* DSWeatherAppTests */,
+				E37B38D420340B1800805709 /* DSWeatherAppUITests */,
+				E37B38AF20340B1700805709 /* Products */,
+				E3A65300203A519A007568F3 /* AFNetworking */,
+			);
+			sourceTree = "<group>";
+		};
+		E37B38AF20340B1700805709 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E37B38AE20340B1700805709 /* DSWeatherApp.app */,
+				E37B38C620340B1800805709 /* DSWeatherAppTests.xctest */,
+				E37B38D120340B1800805709 /* DSWeatherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E37B38B020340B1700805709 /* DSWeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				E3A652D12038F059007568F3 /* WeatherReport */,
+				E329E5672035114A00EFBA2A /* MainAppContents */,
+				E37B38BF20340B1700805709 /* Info.plist */,
+				E37B38C020340B1700805709 /* main.m */,
+			);
+			path = DSWeatherApp;
+			sourceTree = "<group>";
+		};
+		E37B38C920340B1800805709 /* DSWeatherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3A652CF2038ADEA007568F3 /* DSWeatherNetworkClientTests.m */,
+				E31AA0AF203B497000DF8F29 /* DSWeatherViewModalTests.m */,
+				E37B38CC20340B1800805709 /* Info.plist */,
+			);
+			path = DSWeatherAppTests;
+			sourceTree = "<group>";
+		};
+		E37B38D420340B1800805709 /* DSWeatherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E37B38D520340B1800805709 /* DSWeatherAppUITests.m */,
+				E37B38D720340B1800805709 /* Info.plist */,
+			);
+			path = DSWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		E3A652D12038F059007568F3 /* WeatherReport */ = {
+			isa = PBXGroup;
+			children = (
+				E3A652EC2038F220007568F3 /* NetworkClient */,
+				E3A652E82038F206007568F3 /* ViewModal */,
+				E3A652E42038F1EF007568F3 /* Modal */,
+				E3A652D82038F12F007568F3 /* View */,
+			);
+			name = WeatherReport;
+			sourceTree = "<group>";
+		};
+		E3A652D82038F12F007568F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E36FD3C5203C0CC800E6FD11 /* DSWeatherReportViewController.h */,
+				E36FD3C6203C0CC800E6FD11 /* DSWeatherReportViewController.m */,
+				E36FD3C4203C0CC800E6FD11 /* DSWeatherReportViewController.xib */,
+				E36FD3D3203C0D0900E6FD11 /* TableViewCells */,
+				E31AA0B9203C072300DF8F29 /* Header */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E3A652E42038F1EF007568F3 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				E36FD3BC203C0CA600E6FD11 /* DSHumidity.h */,
+				E36FD3BB203C0CA600E6FD11 /* DSHumidity.m */,
+				E36FD3BE203C0CA600E6FD11 /* DSWeatherForeCastDay.h */,
+				E36FD3BD203C0CA600E6FD11 /* DSWeatherForeCastDay.m */,
+				E36FD3BF203C0CA600E6FD11 /* DSWeatherForecastForTenDays.h */,
+				E36FD3C0203C0CA600E6FD11 /* DSWeatherForecastForTenDays.m */,
+				E3A652E22038F1EA007568F3 /* DSWeatherLocation.h */,
+				E3A652E12038F1EA007568F3 /* DSWeatherLocation.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		E3A652E82038F206007568F3 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				E36FD3B9203C0C8A00E6FD11 /* DSWeatherLocationsViewModal.h */,
+				E36FD3B8203C0C8A00E6FD11 /* DSWeatherLocationsViewModal.m */,
+				E3A652E62038F1FE007568F3 /* DSWeatherViewModal.h */,
+				E3A652E52038F1FE007568F3 /* DSWeatherViewModal.m */,
+			);
+			name = ViewModal;
+			sourceTree = "<group>";
+		};
+		E3A652EC2038F220007568F3 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				E3A652E92038F21A007568F3 /* DSWeatherNetworkClient.h */,
+				E3A652EA2038F21A007568F3 /* DSWeatherNetworkClient.m */,
+			);
+			name = NetworkClient;
+			sourceTree = "<group>";
+		};
+		E3A65300203A519A007568F3 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E3A65314203A537D007568F3 /* UIKit+AFNetworking */,
+				E3A65301203A519A007568F3 /* AFSecurityPolicy.h */,
+				E3A65302203A519A007568F3 /* AFNetworkReachabilityManager.h */,
+				E3A65303203A519A007568F3 /* AFURLSessionManager.h */,
+				E3A65304203A519A007568F3 /* AFURLRequestSerialization.h */,
+				E3A65305203A519A007568F3 /* AFURLResponseSerialization.m */,
+				E3A65306203A519A007568F3 /* AFHTTPSessionManager.m */,
+				E3A65307203A519A007568F3 /* AFURLResponseSerialization.h */,
+				E3A65308203A519A007568F3 /* AFURLSessionManager.m */,
+				E3A65309203A519A007568F3 /* AFURLRequestSerialization.m */,
+				E3A6530A203A519A007568F3 /* AFNetworking.h */,
+				E3A6530B203A519A007568F3 /* AFNetworkReachabilityManager.m */,
+				E3A6530C203A519A007568F3 /* AFSecurityPolicy.m */,
+				E3A6530D203A519A007568F3 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		E3A65314203A537D007568F3 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E3A65315203A537D007568F3 /* UIProgressView+AFNetworking.m */,
+				E3A65316203A537D007568F3 /* UIButton+AFNetworking.h */,
+				E3A65317203A537D007568F3 /* UIRefreshControl+AFNetworking.m */,
+				E3A65318203A537D007568F3 /* UIImageView+AFNetworking.h */,
+				E3A65319203A537D007568F3 /* AFImageDownloader.h */,
+				E3A6531A203A537D007568F3 /* AFNetworkActivityIndicatorManager.m */,
+				E3A6531B203A537D007568F3 /* AFAutoPurgingImageCache.h */,
+				E3A6531C203A537D007568F3 /* UIWebView+AFNetworking.h */,
+				E3A6531D203A537D007568F3 /* UIActivityIndicatorView+AFNetworking.h */,
+				E3A6531E203A537D007568F3 /* UIImage+AFNetworking.h */,
+				E3A6531F203A537D007568F3 /* UIProgressView+AFNetworking.h */,
+				E3A65320203A537D007568F3 /* UIImageView+AFNetworking.m */,
+				E3A65321203A537D007568F3 /* UIKit+AFNetworking.h */,
+				E3A65322203A537D007568F3 /* UIRefreshControl+AFNetworking.h */,
+				E3A65323203A537D007568F3 /* UIButton+AFNetworking.m */,
+				E3A65324203A537D007568F3 /* UIActivityIndicatorView+AFNetworking.m */,
+				E3A65325203A537D007568F3 /* UIWebView+AFNetworking.m */,
+				E3A65326203A537D007568F3 /* AFAutoPurgingImageCache.m */,
+				E3A65327203A537D007568F3 /* AFNetworkActivityIndicatorManager.h */,
+				E3A65328203A537D007568F3 /* AFImageDownloader.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E37B38AD20340B1700805709 /* DSWeatherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E37B38DA20340B1800805709 /* Build configuration list for PBXNativeTarget "DSWeatherApp" */;
+			buildPhases = (
+				E37B38AA20340B1700805709 /* Sources */,
+				E37B38AB20340B1700805709 /* Frameworks */,
+				E37B38AC20340B1700805709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSWeatherApp;
+			productName = DSWeatherApp;
+			productReference = E37B38AE20340B1700805709 /* DSWeatherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E37B38C520340B1800805709 /* DSWeatherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E37B38DD20340B1800805709 /* Build configuration list for PBXNativeTarget "DSWeatherAppTests" */;
+			buildPhases = (
+				E37B38C220340B1800805709 /* Sources */,
+				E37B38C320340B1800805709 /* Frameworks */,
+				E37B38C420340B1800805709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E37B38C820340B1800805709 /* PBXTargetDependency */,
+			);
+			name = DSWeatherAppTests;
+			productName = DSWeatherAppTests;
+			productReference = E37B38C620340B1800805709 /* DSWeatherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E37B38D020340B1800805709 /* DSWeatherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E37B38E020340B1800805709 /* Build configuration list for PBXNativeTarget "DSWeatherAppUITests" */;
+			buildPhases = (
+				E37B38CD20340B1800805709 /* Sources */,
+				E37B38CE20340B1800805709 /* Frameworks */,
+				E37B38CF20340B1800805709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E37B38D320340B1800805709 /* PBXTargetDependency */,
+			);
+			name = DSWeatherAppUITests;
+			productName = DSWeatherAppUITests;
+			productReference = E37B38D120340B1800805709 /* DSWeatherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E37B38A620340B1700805709 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "bharadwaj Vangara";
+				TargetAttributes = {
+					E37B38AD20340B1700805709 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E37B38C520340B1800805709 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E37B38AD20340B1700805709;
+					};
+					E37B38D020340B1800805709 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E37B38AD20340B1700805709;
+					};
+				};
+			};
+			buildConfigurationList = E37B38A920340B1700805709 /* Build configuration list for PBXProject "DSWeatherApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E37B38A520340B1700805709;
+			productRefGroup = E37B38AF20340B1700805709 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E37B38AD20340B1700805709 /* DSWeatherApp */,
+				E37B38C520340B1800805709 /* DSWeatherAppTests */,
+				E37B38D020340B1800805709 /* DSWeatherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E37B38AC20340B1700805709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E36FD3D2203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.xib in Resources */,
+				E36FD3C7203C0CC800E6FD11 /* DSWeatherReportViewController.xib in Resources */,
+				E36FD3D7203C0D2F00E6FD11 /* DSWeatherReportTableViewCell.xib in Resources */,
+				E329E56C2035116100EFBA2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37B38C420340B1800805709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37B38CF20340B1800805709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E37B38AA20340B1700805709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A652E32038F1EB007568F3 /* DSWeatherLocation.m in Sources */,
+				E3A6532D203A537E007568F3 /* UIButton+AFNetworking.m in Sources */,
+				E36FD3D1203C0CEF00E6FD11 /* DSWeatherReportHeaderTableViewCell.m in Sources */,
+				E3A6530F203A519B007568F3 /* AFHTTPSessionManager.m in Sources */,
+				E3A6532B203A537E007568F3 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				E36FD3C1203C0CA600E6FD11 /* DSHumidity.m in Sources */,
+				E3A65331203A537E007568F3 /* AFImageDownloader.m in Sources */,
+				E3A65311203A519B007568F3 /* AFURLRequestSerialization.m in Sources */,
+				E36FD3D8203C0D2F00E6FD11 /* DSWeatherReportTableViewCell.m in Sources */,
+				E3A6530E203A519A007568F3 /* AFURLResponseSerialization.m in Sources */,
+				E36FD3C2203C0CA600E6FD11 /* DSWeatherForeCastDay.m in Sources */,
+				E36FD3C8203C0CC800E6FD11 /* DSWeatherReportViewController.m in Sources */,
+				E3A65312203A519B007568F3 /* AFNetworkReachabilityManager.m in Sources */,
+				E3A65329203A537E007568F3 /* UIProgressView+AFNetworking.m in Sources */,
+				E37B38C120340B1700805709 /* main.m in Sources */,
+				E3A6532C203A537E007568F3 /* UIImageView+AFNetworking.m in Sources */,
+				E3A652EB2038F21A007568F3 /* DSWeatherNetworkClient.m in Sources */,
+				E3A6532E203A537E007568F3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				E36FD3BA203C0C8A00E6FD11 /* DSWeatherLocationsViewModal.m in Sources */,
+				E3A65330203A537E007568F3 /* AFAutoPurgingImageCache.m in Sources */,
+				E36FD3C3203C0CA600E6FD11 /* DSWeatherForecastForTenDays.m in Sources */,
+				E3A6532F203A537E007568F3 /* UIWebView+AFNetworking.m in Sources */,
+				E3A652E72038F1FE007568F3 /* DSWeatherViewModal.m in Sources */,
+				E3A65313203A519B007568F3 /* AFSecurityPolicy.m in Sources */,
+				E3A6532A203A537E007568F3 /* UIRefreshControl+AFNetworking.m in Sources */,
+				E329E56B2035116100EFBA2A /* AppDelegate.m in Sources */,
+				E3A65310203A519B007568F3 /* AFURLSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37B38C220340B1800805709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31AA0B0203B497000DF8F29 /* DSWeatherViewModalTests.m in Sources */,
+				E3A652D02038ADEA007568F3 /* DSWeatherNetworkClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37B38CD20340B1800805709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37B38D620340B1800805709 /* DSWeatherAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E37B38C820340B1800805709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E37B38AD20340B1700805709 /* DSWeatherApp */;
+			targetProxy = E37B38C720340B1800805709 /* PBXContainerItemProxy */;
+		};
+		E37B38D320340B1800805709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E37B38AD20340B1700805709 /* DSWeatherApp */;
+			targetProxy = E37B38D220340B1800805709 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E37B38D820340B1800805709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E37B38D920340B1800805709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E37B38DB20340B1800805709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54H58KT486;
+				INFOPLIST_FILE = DSWeatherApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.husa.DSWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E37B38DC20340B1800805709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54H58KT486;
+				INFOPLIST_FILE = DSWeatherApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.husa.DSWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E37B38DE20340B1800805709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54H58KT486;
+				INFOPLIST_FILE = DSWeatherAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.husa.DSWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSWeatherApp.app/DSWeatherApp";
+			};
+			name = Debug;
+		};
+		E37B38DF20340B1800805709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54H58KT486;
+				INFOPLIST_FILE = DSWeatherAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.husa.DSWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSWeatherApp.app/DSWeatherApp";
+			};
+			name = Release;
+		};
+		E37B38E120340B1800805709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54H58KT486;
+				INFOPLIST_FILE = DSWeatherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.husa.DSWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DSWeatherApp;
+			};
+			name = Debug;
+		};
+		E37B38E220340B1800805709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54H58KT486;
+				INFOPLIST_FILE = DSWeatherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.husa.DSWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DSWeatherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E37B38A920340B1700805709 /* Build configuration list for PBXProject "DSWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37B38D820340B1800805709 /* Debug */,
+				E37B38D920340B1800805709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E37B38DA20340B1800805709 /* Build configuration list for PBXNativeTarget "DSWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37B38DB20340B1800805709 /* Debug */,
+				E37B38DC20340B1800805709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E37B38DD20340B1800805709 /* Build configuration list for PBXNativeTarget "DSWeatherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37B38DE20340B1800805709 /* Debug */,
+				E37B38DF20340B1800805709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E37B38E020340B1800805709 /* Build configuration list for PBXNativeTarget "DSWeatherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37B38E120340B1800805709 /* Debug */,
+				E37B38E220340B1800805709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E37B38A620340B1700805709 /* Project object */;
+}
