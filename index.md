@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Weather-App using MVVM pattern
 
 You can use the [editor on GitHub](https://github.com/bharadwaj465/Weather-App/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
